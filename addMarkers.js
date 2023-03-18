@@ -97,7 +97,7 @@ AFRAME.registerComponent("create-markers", {
                     value: `${toy.price}`
                 });
 
-                pricePlane.appendChidld(priceText);
+                pricePlane.appendChild(priceText);
                 marker.appendChild(pricePlane);
             }
         });

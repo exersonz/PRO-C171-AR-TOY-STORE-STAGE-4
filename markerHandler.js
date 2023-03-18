@@ -61,10 +61,10 @@ AFRAME.registerComponent("markerhandler", {
             var model = document.querySelector(`#model-${toy.id}`);
             model.setAttribute("visible", true);
 
-            var toyMainPlane = document.querySelector(`main-plane-${toy.id}`);
+            var toyMainPlane = document.querySelector(`#main-plane-${toy.id}`);
             toyMainPlane.setAttribute("visible", true);
 
-            var pricePlane = document.querySelector(`price-plane-${toy.id}`);
+            var pricePlane = document.querySelector(`#price-plane-${toy.id}`);
             pricePlane.setAttribute("visible", true);
 
             //button div displaying style
@@ -92,7 +92,9 @@ AFRAME.registerComponent("markerhandler", {
                     swal({
                         icon: "success",
                         title: "Order Successful",
-                        text: "You will receive your order soon!"
+                        text: "You will receive your order soon!",
+                        timer: 2000,
+                        buttons: false
                     });
                 }); 
             }  
